@@ -140,10 +140,10 @@ public class RoleAssignerModule extends Module {
                 TechDiscordBot.log("Role » Added " + r.getName() + " (" + all.getEffectiveName() + ")");
             });
 
-            rolesToRemove.forEach(r -> {
-                TechDiscordBot.getGuild().removeRoleFromMember(all, r).complete();
-                TechDiscordBot.log("Role » Removed " + r.getName() + " (" + all.getEffectiveName() + ")");
-            });
+          //  rolesToRemove.forEach(r -> {
+          //      TechDiscordBot.getGuild().removeRoleFromMember(all, r).complete();
+          //      TechDiscordBot.log("Role » Removed " + r.getName() + " (" + all.getEffectiveName() + ")");
+          //  });
         }
     }
 }
